@@ -1,0 +1,12 @@
+{
+        "require": {
+                  "mediawiki/semantic-media-wiki": "~4.0"
+        },
+        "config": {
+                "allow-plugins": {
+                        "wikimedia/composer-merge-plugin": true,
+                        "composer/installers": true
+                }
+        }
+}
+
