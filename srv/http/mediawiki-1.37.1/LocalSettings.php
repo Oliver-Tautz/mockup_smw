@@ -52,8 +52,8 @@ $wgEmailAuthentication = true;
 
 ## Database settings
 $wgDBtype = "mysql";
-$wgDBserver = "127.0.0.1";
-$wgDBname = "mockup_wiki";
+$wgDBserver = "localhost";
+$wgDBname = "my_wiki";
 $wgDBuser = "phpadmin";
 $wgDBpassword = "132UWEhqwe?!*&as";
 
@@ -104,14 +104,14 @@ $wgLocaltimezone = "UTC";
 ## be publicly accessible from the web.
 #$wgCacheDirectory = "$IP/cache";
 
-$wgSecretKey = "e10121ad518a4a84176796628cff6655428dd2ebc16339b828699b77d7a9d2aa";
+$wgSecretKey = "e477463be067e9591cb2146d988efdfa67276431c8f3700150bd134591b0597c";
 
 # Changing this will log out all existing sessions.
 $wgAuthenticationTokenVersion = "1";
 
 # Site upgrade key. Must be set to a string (default provided) to turn on the
 # web installer while LocalSettings.php is in place
-$wgUpgradeKey = "feca7493c22d39be";
+$wgUpgradeKey = "d02a44010f00a7e2";
 
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
@@ -137,8 +137,4 @@ wfLoadSkin( 'Vector' );
 
 # End of automatically generated settings.
 # Add more configuration options below.
-
-
-wfLoadExtension( 'SemanticMediaWiki' );
-enableSemantics( 'example.org' );
 
