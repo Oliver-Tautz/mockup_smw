@@ -74,7 +74,8 @@
 		"wikimedia/wait-condition-loop": "2.0.2",
 		"wikimedia/wrappedstring": "3.2.0",
 		"wikimedia/xmp-reader": "0.8.1",
-		"zordius/lightncandy": "1.2.6"
+		"zordius/lightncandy": "1.2.6",
+        "mediawiki/semantic-media-wiki": "~3.1"
 	},
 	"require-dev": {
 		"composer/spdx-licenses": "1.5.4",
@@ -152,7 +153,10 @@
 	},
 	"config": {
 		"optimize-autoloader": true,
-		"prepend-autoloader": false
+		"prepend-autoloader": false,
+		"allow-plugins": {
+			"wikimedia/composer-merge-plugin": true
+		}
 	},
 	"extra": {
 		"merge-plugin": {

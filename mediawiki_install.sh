@@ -54,6 +54,6 @@ firefox http://localhost/mediawiki-1.37.1/index.php
 
 cp -rp srv /
 #cd /srv/http/mediawiki-1.37.1 
-#/usr/bin/php7 /usr/bin/composer update --no-dev
+sudo /usr/bin/php7 /srv/http/mediawiki-1.37.1/composer2.1.14.phar  update --no-dev
 
 # it works :)
