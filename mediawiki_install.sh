@@ -53,7 +53,15 @@ firefox http://localhost/mediawiki-1.37.1/index.php
 # install semantic mw extension
 
 cp -rp srv /
-#cd /srv/http/mediawiki-1.37.1 
+
+cd /srv/http/mediawiki-1.37.1 
+
+# use old composer because errors ...
 sudo /usr/bin/php7 /srv/http/mediawiki-1.37.1/composer2.1.14.phar  update --no-dev
+
+# add 'enableSemantics( 'localhost/mediawiki-1.37.1' ); to LocalSettings.php
+# add wfLoadExtension( 'SemanticMediaWiki' );
+
+# use SMW 4.0 to avoid php error
 
 # it works :)
