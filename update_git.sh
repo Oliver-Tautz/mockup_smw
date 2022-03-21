@@ -18,8 +18,13 @@
 #===============================================================================
 
 set -o nounset                                  # Treat unset variables as an error
+
+# copy config files
 cp -p /etc/php7/php.ini ./etc/php7/php.ini
 cp -p /etc/php7/conf.d/apcu.ini ./etc/php7/conf.d/apcu.ini
 cp -p /etc/httpd/conf/extra/httpd-vhosts.conf ./etc/httpd/conf/extra/httpd-vhosts.conf 
 cp -p /etc/httpd/conf/httpd.conf ./etc/httpd/conf/httpd.conf 
 cp -p /srv/http/mediawiki-1.37.1/{composer.json,LocalSettings.php} ./srv/http/mediawiki-1.37.1/
+
+# zip wiki files
+tar zcvhf wikidata.tgz /srv/http/mediawiki-1.37.1/
