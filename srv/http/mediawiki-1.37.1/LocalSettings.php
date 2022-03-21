@@ -38,7 +38,7 @@ $wgResourceBasePath = $wgScriptPath;
 
 ## The URL paths to the logo.  Make sure you change this from the default,
 ## or else you'll overwrite your logo when you upgrade!
-$wgLogos = [ '1x' => "$wgResourceBasePath/resources/assets/wiki.png" ];
+$wgLogos = [ '1x' => "$wgResourceBasePath/resources/assets/free_otter.png" ];
 
 ## UPO means: this is also a user preference option
 
@@ -139,6 +139,14 @@ wfLoadSkin( 'Vector' );
 
 # End of automatically generated settings.
 # Add more configuration options below.
+
+#SMW include 
 wfLoadExtension( 'SemanticMediaWiki' );
 enableSemantics( 'localhost/mediawiki-1.37.1' );
+
+# Queries
+wfLoadExtension( 'SemanticCompoundQueries' );
+# OTTR extension
+wfLoadExtension( 'OttrParserExtension' );
+
 #$wgShowExceptionDetails = 'true';

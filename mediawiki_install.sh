@@ -65,3 +65,8 @@ sudo /usr/bin/php7 /srv/http/mediawiki-1.37.1/composer2.1.14.phar  update --no-d
 # use SMW 4.0 to avoid php error
 
 # it works :)
+
+# download ottr extension
+git clone https://github.com/RobFlo98/OttrParserExtension /srv/http/mediawiki-1.37.1/extensions/OttrParserExtension 
+
+# add  wfLoadExtension( 'OttrParserExtension' ); to LocalSettings.php

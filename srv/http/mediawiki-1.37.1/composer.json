@@ -75,7 +75,9 @@
 		"wikimedia/wrappedstring": "3.2.0",
 		"wikimedia/xmp-reader": "0.8.1",
 		"zordius/lightncandy": "1.2.6",
-        "mediawiki/semantic-media-wiki": "~3.1"
+	        "mediawiki/semantic-media-wiki": "~4.0",
+        	"mediawiki/semantic-compound-queries": "~2.2"
+
 	},
 	"require-dev": {
 		"composer/spdx-licenses": "1.5.4",
