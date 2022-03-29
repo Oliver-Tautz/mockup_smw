@@ -3,7 +3,7 @@
 ## Design
 
 * Dont use Variables extension if possible (will be depreciated)
-    * this will be problematic
+    * this will be problematic because it is used everywhere in the smw code
 
 ## Bugs
 * Not quoting strings leads to cryptic error
