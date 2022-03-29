@@ -1,5 +1,10 @@
 # List of problems/bugs with ottr smw
 
+## Design
+
+* Dont use Variables extension if possible (will be depreciated)
+    * this will be problematic
+
 ## Bugs
 * Not quoting strings leads to cryptic error
 * instance creation with form errors with this code:
