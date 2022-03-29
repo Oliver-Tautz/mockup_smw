@@ -32,3 +32,4 @@ dpm:Publication("some author, another author", "some title",  2022).
 ## Features
 
 * [add dependencies to extension.json](https://www.mediawiki.org/wiki/Special:MyLanguage/Manual:Developing_extensions#Handling_dependencies)
+* add the Template 'Template:exists' to xml or some other dependency mechanism
